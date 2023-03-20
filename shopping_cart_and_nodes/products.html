@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>SHOP</title>
+
+	<link href="style.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<h1 align="center"> SHOPPING CART</h1>
+		</header>
+
+		<div class="navbar">
+				<a href = "../JanetPanAsg1/index.html">INDEX
+				</a>
+
+				<a href="products.html">SHOP
+				</a>
+
+				<a href="../JanetPanAsg1/contact.html">CONTACT
+				</a>
+        </div>
+
+        <div class="container">
+			<h2 align="center"> welcome to the shop!</h2>
+			<div class="col-50">
+				<div class = products>
+						<!-- CREDIT: https://i.pinimg.com/564x/b8/75/e5/b875e58bdbe36ca9b79e88014c0121d8.jpg -->
+						<div class=productImg>
+							<img id="pImg" height="300px" src="images/pin.jpg">
+						</div>
+						<h3> PIN BOOKMARK </h3>
+						<p>
+							quantity:
+							<input type="number" min="0" id="pin" onchange="pinSubtotal();cartTotal()">
+							<br>
+							price (per piece):
+							<input type="number" min="0" id="pinPrice" readonly value="12">
+							<br>
+							subtotal:
+							<input type="number" min="0" readonly value="0" id ="pinSubtotal">
+						</p>
+					</div>
+				</div>
+
+				<div class="col-50">
+					<div class = products>
+						<!-- CREDIT: https://i.pinimg.com/564x/38/8d/cc/388dccf3ffc729e4fa70c063cac48c5d.jpg -->
+						<div class="productImg">
+						<img id="pImg" height="300px" src="images/charm.jpg">
+						</div>
+							<h3> CHARM BOOKMARK </h3>
+							<p>
+								quantity:
+								<input type="number" min="0" id="charm" onchange="charmSubtotal();cartTotal()">
+								<br>
+								price (per piece):
+								<input type="number" min="0" id="charmPrice" readonly value="17">
+								<br>
+								subtotal:
+								<input type = number min="0" readonly value="0" id ="charmSubtotal">
+							</p>
+						</div>
+					</div>
+
+				<div class="checkoutForm">
+					<h2> CHECKOUT </h2>
+					<p> shipping ($5)</p>
+					<input type="checkbox" id="shipping" readonly value="5" onchange="cartTotal()">
+					<p>
+						cart total
+						<input type = number readonly value="0" id = "cartTotal" onchange="cartTotal()">
+					</p>	
+					
+					<p>_____________________________________________</p>
+					<br>
+
+					<h2> INFORMATION </h2>
+
+					<form action="submit">
+						<p> first name: </p>
+						<input type="text" id="fname" placeholder="first name">
+						<p> last name: </p>
+						<input type="text" id="lname" placeholder="last name">
+						<p> email: </p>
+						<input type="text" id="email" placeholder="email@gmail.com">
+						<p> phone number: </p>
+						<input type="text" id="phoneNumber" placeholder="(123)-456-7890">
+						<p>credit card number: </p>
+						<input type="text" id="credit" placeholder="1111 - 2222 - 3333 - 4444">
+						<p> zipcode: </p>
+						<input type="text" id="city" placeholder="10014">
+					</form>
+
+
+							<!-- EVENT LISTENER -->
+					<br>
+					<button id="submission"> SUBMIT </button>
+					<div class="receipt">
+						<p align="center" id="receiptTitle"> </p>
+							<p id="nameSubmit"> </p>	
+							<p id="emailSubmit"> </p>
+							<p id="phoneNumberSubmit"> </p>
+							<p id="citySubmit"> </p>
+							<p id="creditNumber"> </p>
+							<p id="userTotal"> </p>
+					</div>			
+				</div>
+			</div>
+
+		<!-- FOOTER -->
+        <div class="footer">
+            <p class="copyright"> © Janet Pan</p>
+        </div>
+        </div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="products.js"></script>
+
+</body>
+</html>
