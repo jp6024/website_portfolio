@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>HOME</title>
+
+	<link href="css/styles.css" type="text/css" rel="stylesheet" />        
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<h1 align="center"> JQUERY</h1>
+		</header>
+    
+    <!-- NAVBAR -->
+		<div class="navbar">
+				<a href = "../JanetPanAsg1/index.html">INDEX
+				</a>
+
+				<a href="../JanetPanAsg1/assign_i.html">ASSIGN I
+				</a>
+
+                <a href="../asg2/index.html">ASSIGN II
+				</a>
+
+                <a href="index.html">ASSIGN III
+				</a>
+
+				<a href="../JanetPanAsg1/contact.html">CONTACT
+				</a>
+        </div>
+		
+
+		<div class="container">
+		<!-- start here -->
+
+		<!-- STYLE APPLICATION -->
+		<div>
+		<button id="highlight">change style</button>
+		<p id="changeStyle">hello world!</p>
+		</div>
+		<!-- IMAGE APPLICATION -->
+		<div>
+		<img height="200px" id="image" src="pallasCat.jpg">
+		<button id="hide">hide image</button>
+		<button id="show">show image</button>
+		</div>
+		<!-- ANIMATION APPLICATION -->
+        <button id="animateButton">animate</button>
+        <p></p>
+        <div id="animate" style="background:red;height:50px;width:50px;border-radius:90%;"></div>
+        
+        
+
+		<!-- JQUERY -->
+		<script> 
+			$(function(){
+				// STYLE APPLICATION
+				$('#highlight').click(function(){
+				$("#changeStyle").css("background-color", "yellow");
+			 });
+
+			 	// IMAGE APPLICATIONS		
+				$('#hide').click(function(){
+				$("#image").hide();
+			 });
+
+			 $('#show').click(function(){
+				$("#image").show();
+			 });
+
+			 // ANIMATION APPLICATIONS
+			 $('#animateButton').click(function() {
+                var obj = $("#animate");
+                obj.animate({height: '500px'}, "slow");
+                obj.animate({width: '400px'}, "fast");
+                obj.animate({height: '50px'}, "slow");
+                obj.animate({width: '50px'}, "fast");
+            });
+
+			});
+			</script>
+
+
+
+
+
+
+
+
+
+		</div>
+
+    <!-- FOOTER -->
+		<div class="footer">
+			<br>
+			<p class="copyright"> © Janet Pan</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
