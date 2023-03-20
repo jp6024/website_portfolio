@@ -1,0 +1,137 @@
+body{
+    background-color: rgba(222, 230, 230, 0.90);
+}
+
+header{
+    font-family: serif;
+    text-transform: lowercase;
+    /* font-family: 'helvetica'; --> can put name to font; sometimes you need to have form file for fonts */
+    /*font-family: creeper;*/
+}
+
+
+
+    nav{
+      margin-bottom: 25px;  
+    }
+
+    /* formatting navigation */
+    nav ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+
+        display: flex; /* turns a box into a flexible box; usually they stack, but when flexed = horizontal */
+        flex-grow: 2;
+    }
+
+    nav ul a{
+        border: solid 1px black;
+        flex-grow: 1; /* allows you to to display the content across the pages evenly uniformly */
+
+        text-align: center;
+        padding: 10 px;
+
+        font-size: 12 pt;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        border-radius: 50px;
+
+        color: black;
+
+    }
+
+    nav ul a:link{
+        text-decoration:none;
+        color:rgb(35, 51, 50);
+    }
+
+    nav ul a:hover{
+        color:rgb(165, 206, 192); 
+    }
+
+    nav ul a:active{
+        color: rgb(91, 116, 119);
+    }
+
+    nav ul a:visited{
+        color: teal;
+    }
+
+    nav ul a:focus{
+        color: goldenrod;
+    }
+
+    article{
+        display:flex;
+    }
+
+    #text_content{
+        padding:20px;
+        font-size: 10pt;
+    }
+
+    #about{
+        font-size: 10pt;
+    }
+
+    footer{
+        display: flex;
+    }
+
+    footer div{
+        flex-grow: 1;
+    }
+
+    #socialMedia{
+        border: 1px;
+        border-radius: 15px;
+        border-color:teal;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end; 
+    }
+
+
+    #wrap{
+        box-align: start;
+        background-color: rgb(247, 248, 248);
+
+        padding: 30px;
+        border-radius: 15px;
+
+        width: 80%;
+        margin:auto;
+
+        animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+
+    .inputField{ 
+        border: solid 1px black;
+        border-radius: 15px;
+        width: 300px;
+        font-size: 10pt;
+    }
+
+    #form{
+        border:flex;
+        align-self: auto;
+    }
+
+
+
+
+    
