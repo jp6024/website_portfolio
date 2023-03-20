@@ -1,0 +1,343 @@
+body {
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: kiona;
+    src: url("../fonts/kionaregular.ttf");
+
+}
+
+h4 {
+    font-family: kiona;
+    font-weight: 500;
+    padding-bottom: 25px;
+    color: #E5DADA;
+}
+
+h5 {
+    font-family: kiona;
+    font-weight: 900;
+    font-size: 20px;
+
+    color: white;
+
+}
+
+p {
+    color: white;
+}
+
+.transparent {
+    background-color: #21252926;
+}
+
+.donateButton {
+    font-family: kiona;
+    font-weight: 500;
+    font-size: 25px;
+    border: solid 1px #9a8c98;
+
+    background-color: #90323D;
+    border-radius: 5px;
+    color: #E5DADA;
+
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.navbar {
+    background-color: #90323D;
+    width: 100%;
+    color: #E5DADA;
+}
+
+.navbar-brand {
+    font-family: kiona;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.navbar-light .navbar-brand {
+    color: #E5DADA;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #f2e9e4;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #9a8c98;
+}
+
+.card-text {
+    color: #212529;
+}
+
+.container {
+    background-color: #343a40;
+    padding: 0%;
+    margin: 0%;
+    /* border: solid 1px red; */
+
+}
+
+.col-md-12,
+.col-md-6,
+.col-md-4 {
+    /* border: solid 1px black; */
+}
+
+
+.noPadding {
+    padding: 0 px;
+    margin: 0 px;
+}
+
+.footer {
+    min-height: 30vh;
+}
+
+.mailingList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.marginTopBottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.carousel-inner {
+    width: 100%;
+    height: 200px;
+}
+
+.carousel-item {
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardOutlines {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    /* border: solid 1px red; */
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+}
+
+.actionButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 60px;
+    background-color: #90323D;
+
+    font-family: kiona;
+    font-weight: 500;
+    display: none;
+}
+
+
+.card-body {
+    background: #E5DADA;
+}
+
+.card-title {
+    font-family: kiona;
+    font-weight: 900px;
+    font-size: 25px;
+
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.smbtn {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+.btn {
+    background-color: #90323D;
+    border: none;
+    border-radius: 5px;
+    color: #E5DADA;
+
+    font-family: kiona;
+    font-weight: 500;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.mailingList {
+    padding-left: 25px;
+    padding-top: 25px;
+    background-color: #90323D;
+    flex-flow: column;
+}
+
+.socialMedia {
+    padding-left: 25px;
+    padding-top: 25px;
+    background-color: #90323D;
+
+}
+
+.input-group-text {
+    background-color: #9a8c98;
+    border: none;
+    color: #343a40;
+}
+
+.form-control {
+    background-color: #E5DADA;
+    color: #90323D;
+    border: none;
+    font-family: kiona;
+}
+
+.btn-primary:hover {
+    background-color: #9a8c98;
+    border-color: #E5DADA;
+}
+
+.donateGroup {
+    display: flex;
+    justify-content: center;
+}
+
+.resources-bg {
+    background-color: #E5DADA;
+    border-radius: 15px;
+    display: fixed;
+
+}
+
+
+.display-5 {
+    color: #212529;
+    font-family: kiona;
+    padding-bottom: 25px;
+    font-size: 40px;
+}
+
+.accordian-button {
+    border-color: #90323D;
+}
+
+h2 {
+    font-family: kiona;
+    font-size: 25px;
+}
+
+.accordian-header {
+    background-color: #90323D;
+}
+
+.accordian-body {
+    background-color: #E5DADA;
+    font-size: large
+}
+
+
+.imageclass {
+    display: flex;
+    align-items: flex-start;
+    background-color: #E5DADA;
+}
+
+.donationInput {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.donateGroup {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.fixedclass {
+    background-color: #E5DADA;
+    display: flex;
+
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+.donatebtn {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+
+    width: 100px;
+    height: 60px;
+
+    background-color: #90323D;
+    justify-content: center;
+
+    text-decoration: none;
+    font-family: kiona;
+    font-size: 25px;
+    color: #E5DADA;
+
+    border-radius: 15px;
+    border: solid 1px #9a8c98;
+
+}
+
+.donationConfirm {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.upperTitle {
+    color: #212529;
+    font-family: kiona;
+}
+
+.involveText {
+    color: #212529;
+}
+
+.jumbotron {
+    background-color: #E5DADA;
+    padding: 10px;
+
+}
