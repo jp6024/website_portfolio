@@ -1,0 +1,267 @@
+#wrap{
+  background-image: url("../fortunes/bg2.jpg");
+    box-align: start;
+    background-color: #E8E9F3;
+
+    padding: 30px;
+    border-radius: 15px;
+
+    width: 80%;
+    margin:auto;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* FONTS */
+@font-face {
+  font-family: made;
+  src: url("../fonts/made.otf");
+}
+
+@font-face {
+  font-family: geo;
+  src: url("../fonts/geo.ttf");
+}
+
+@font-face {
+  font-family: timeless;
+  src: url("../fonts/timeless.ttf");
+}
+
+/* MAIN PAGE */
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #272635;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1{
+  font-family: timeless;
+}
+
+nav{
+    margin-bottom: 25px;  
+  }
+
+p, h5{
+  font-family: timeless;
+}
+
+
+
+  /* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    font-family: timeless;
+    
+  }
+  
+  .navbar a {
+    /*border: solid 1px #718F94;*/
+    color: #E9ECF5;
+    background-color: #403F4C;
+    border-radius: 5px;
+    padding: 14px 20px;
+    margin: 10px;
+    width:85%;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #718F94;
+    color: 0E1C36;
+  }
+
+/*IMAGE EDIT*/
+.image{
+    display:block;
+    height: auto;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit:cover;
+}
+
+
+/* CONTACT FORM */
+input[type=text], select, textarea{
+  width: 90%;
+  padding: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #718F94;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: timeless;
+  font-size: 15px;
+}
+
+label {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+  width: 87%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #403F4C;
+  text-align: center;
+  border-radius: 5px;
+  color:#E8E9F3;
+  font-family: timeless;
+}
+
+input[type=submit] {
+  background-color: #22a173;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  font-family: timeless;
+  margin-top: 5px;
+}
+
+input[type=reset] {
+  background-color: #718F94;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+  margin-top: 5px;
+  font-family: timeless;
+}
+.container {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+/* COLUMNS */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.col-50{
+  display: inline-block;
+  width: 45%;
+  margin-top: 6px;
+  border: solid 1px #403F4C;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 12px;
+  
+}
+
+/* CLEAR FLOAT */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* HEADER IMG */
+.headerimg{
+  height: 300px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.topimage{
+  height: 100px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile{
+  height: 300px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+ 
+/* VIDEO RESPONSIVE */
+.video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 60%;
+}
+
+img{
+  height: auto;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.responsive-iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+  /* FOOTER */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #E8E9F3;
+  font-family: timeless;
+  font-size: 12px;
+}
+
+ /* MEDIA QUERY */
+@media (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .col-50 {
+    width: 90%;
+    margin-top: 0;
+  }
+}
+
+/* RESPONSIVE - CONTACT FORM */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
