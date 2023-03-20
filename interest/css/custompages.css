@@ -1,0 +1,273 @@
+body {
+    background-color: #6B2737;
+}
+
+@font-face {
+    font-family: assassin;
+    src: url("../text/assassin.ttf");
+}
+
+@font-face {
+    font-family: timeless;
+    src: url("../text/timeless.ttf");
+}
+
+h1 {
+    font-family: assassin;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    /* font-weight: 200; */
+    /* text-transform: uppercase; */
+
+    color: #C7AC92;
+}
+
+#wrap {
+    box-align: start;
+    background-color: #222431;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    padding: 30px;
+    border-radius: 20px;
+
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* PAGE 1 SPECIFIC */
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.moodboard {
+    width: 25%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.moodboard img {
+    max-width: 200px;
+}
+
+.summary {
+    background-color: RGB(211, 211, 211, .1);
+
+    width: 75%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+    color: #C7AC92;
+    font-family: timeless;
+    /* font-size: small; */
+}
+
+/* PAGE TWO SPECIFIC */
+.border {
+    border: solid 1px #C7AC92;
+    border-radius: 5px;
+    border-style: dotted;
+}
+
+.holder {
+    display: flex;
+    justify-content: space-around;
+
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px #C7AC92;
+    border-radius: 5px;
+    border-style: dotted;
+}
+
+.portrait {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#nametitle {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: larger;
+    font-family: assassin;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+#quote {
+    font-style: italic;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#description {
+
+    background-color: RGB(211, 211, 211, .1);
+    color: #C7AC92;
+    padding: 2px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-family: timeless;
+    /* font-size: small; */
+    width: 50%;
+}
+
+
+/* PAGE 3 SPECIFIC */
+.main {
+    background-color: RGB(211, 211, 211, .1);
+    border-radius: 5px;
+    color: #C7AC92;
+
+    padding: 10px;
+    margin: 5px;
+
+    display: flex;
+    text-indent: 5%;
+    display: inline-block;
+
+}
+
+#head {
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    font-family: assassin;
+    font-size: larger;
+}
+
+#excerpt {
+    font-family: timeless;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    /* font-size: small; */
+}
+
+/* NAVIGATION */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.shopnav {
+    font-family: assassin;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+.back {
+    display: flex;
+    /*border: solid 1px white;*/
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding-right: 5px;
+    width: 50%;
+    font-family: assassin;
+}
+
+.forward {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 5px;
+    width: 50%;
+    font-family: assassin;
+}
+
+.one {
+    /* border: solid 1px red; */
+    height: 60px;
+    width: 60px;
+    font-family: assassin;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.two {
+    height: 60px;
+    width: 60px;
+    font-family: assassin;
+    display: flex;
+    justify-content: center;
+}
+
+.three {
+    height: 60px;
+    width: 60px;
+    font-family: assassin;
+    display: flex;
+    justify-content: flex-start;
+    padding: none;
+    margin: none;
+}
+
+
+div a {
+    border-radius: 5px;
+    background: #C7AC92;
+    margin: 0px;
+    padding: 0px;
+
+    width: 50%;
+    height: 30px;
+
+
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    color: #222431;
+
+
+}
+
+div a:link {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: #222431;
+}
+
+div a:hover {
+    color: #6B2737;
+}
+
+div a:active {
+    color: goldenrod;
+}
+
+div a:visited {
+    color: #7d5637;
+}
+
+div a:focus {
+    color: #a44a3f;
+}
